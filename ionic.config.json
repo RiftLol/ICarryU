@@ -1,0 +1,7 @@
+{
+  "name": "icarryu",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

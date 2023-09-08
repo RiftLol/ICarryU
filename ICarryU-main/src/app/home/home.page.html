@@ -1,0 +1,85 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="3" class="menu-column">
+        <ion-menu contentId="main-content">
+          <ion-header [translucent]="true">
+            <ion-toolbar color="tertiary">
+              <ion-title>Menu</ion-title>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content class="ion-padding">
+            <ion-list lines="none">
+              <ion-item button (click)="navigateTo('home')">
+                <ion-icon slot="start" name="home-outline"></ion-icon>
+                Inicio
+              </ion-item>
+              <ion-item button (click)="navigateTo('viajes')">
+                <ion-icon slot="start" name="car-sport-outline"></ion-icon>
+                Viajes
+              </ion-item>
+              <ion-item button (click)="navigateTo('perfil')">
+                <ion-icon slot="start" name="person-outline"></ion-icon>
+                Perfil
+              </ion-item>
+              <ion-item button (click)="navigateTo('premium')">
+                <ion-icon slot="start" name="sparkles-outline"></ion-icon>
+                Premium
+              </ion-item>
+            </ion-list>
+          </ion-content>
+        </ion-menu>
+      </ion-col>
+      <ion-col size="9" class="main-content">
+        <ion-header>
+          <ion-toolbar>
+            <ion-buttons slot="start">
+              <ion-menu-button></ion-menu-button>
+            </ion-buttons>
+            <ion-title>{{ pageTitle }}</ion-title>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Tu Viaje</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-label>Desde: Origen</ion-label>
+              <ion-label>A: Destino</ion-label>
+              <ion-button expand="full" color="tertiary">Solicitar UberX</ion-button>
+            </ion-card-content>
+          </ion-card>
+
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Ofertas Especiales</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <ion-list>
+                <ion-item>
+                  <ion-thumbnail slot="start">
+                    <img src="assets/img1.jpg">
+                  </ion-thumbnail>
+                  <ion-label>
+                    <h2>Descuento de $5 en tu próximo viaje</h2>
+                    <p>Válido hasta el 31 de diciembre</p>
+                  </ion-label>
+                </ion-item>
+                <ion-item>
+                  <ion-thumbnail slot="start">
+                    <img src="assets/img2.jpg">
+                  </ion-thumbnail>
+                  <ion-label>
+                    <h2>Oferta especial en Uber Premium</h2>
+                    <p>¡Viaja con estilo!</p>
+                  </ion-label>
+                </ion-item>
+              </ion-list>
+            </ion-card-content>
+          </ion-card>
+        </ion-content>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

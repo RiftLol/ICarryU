@@ -1,0 +1,60 @@
+ ion-content{
+    text-align:center;
+    //background: linear-gradient(rgb(72, 203, 255), rgb(193, 248, 255));
+    //url("/assets/girl-camera.jpg") no-repeat center center / cover;
+
+    .login-section{
+        width: 100%;
+        max-width: 700px;
+        right: 0;
+        left: 0;
+        margin:auto;
+    }
+
+    .heading{
+        margin-top: 10px;
+        h1{
+            font-size: 3rem;
+            font-weight:bolder;
+        }
+        p{
+            font-size: 1rem;
+            color: #000000;
+        }
+
+    }
+
+    .login-from{ 
+            ion-label{
+                margin-left: 10px;
+                font-weight: bolder;
+                font-size: 1rem;
+                color: #ff0055;
+            }
+            
+            ion-input{
+                font-size: 1rem;
+                --padding-top: 20px;
+            }
+    }
+
+    .from-input{
+        ion-button{
+            --background: #93e9be;
+            --color: rgb(255, 255, 255);
+            --border-color: #83cfa9;
+            --border-style: solid;
+            --border-width: 1px;
+            --box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.25);
+            --ripple-color: deeppink;
+            --padding-top: 15px;
+            --padding-bottom: 15px;
+        }
+    }
+
+    .from-input2{
+        ion-button{
+            --color: rgb(102, 102, 102);
+        }
+    }
+}

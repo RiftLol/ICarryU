@@ -1,0 +1,43 @@
+<ion-app>
+<ion-menu contentId="main-content">
+<ion-header [translucent]="true">
+  <ion-toolbar color="tertiary">
+    <ion-title>Menu</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-list lines="inset">
+    <ion-item>
+      <ion-button fill="clear">Inicio</ion-button><ion-icon name="home-outline"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-button fill="clear">Viajes</ion-button><ion-icon name="car-sport-outline"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-button fill="clear">Perfil</ion-button><ion-icon name="person-outline"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-button fill="clear">Premium</ion-button><ion-icon name="sparkles-outline"></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-segment value="all">
+        <ion-segment-button value="all">
+          <ion-label>All</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="favorites">
+          <ion-label>Favorites</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding"> Tap the button in the toolbar to open the menu. </ion-content>
+</div>
+</ion-app>

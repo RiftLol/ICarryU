@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="Comenzar">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Iniciar Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      Iniciar sesión
+    </ion-card-header>
+    <ion-card-content>
+      <form [FormGroup]="formulariologin">
+        <ion-item >
+          <ion-label position="floating">Correo Institucional</ion-label>
+          <ion-input type="email" [{ngModel}]="usuario.email" minlength="3"></ion-input>
+        </ion-item>
+    
+        <ion-item >
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input type="password" [{ngModel}]="usuario.password" minlength="4" ></ion-input>
+        </ion-item>
+    
+      </form>
+      <ion-item>
+        <ion-col>
+        <ion-button (click)="['goTohome']">Iniciar Sesión</ion-button>
+        </ion-col>
+      </ion-item> 
+    </ion-card-content>
+    <ion-footer>
+      <ion-toolbar color="primary">
+        <ion-buttons slot="end">
+          <ion-button [routerLink]="['/register']">¿Olvidaste la contraseña?</ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-footer>
+  </ion-card>
+
+
+</ion-content>
